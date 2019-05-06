@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/*css 初始化, 另外还要写在基础样式中 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码，谷歌不支持12px以下的字体*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*清除浮动*/
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+/*考虑兼容问题*/
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+        /*site-nav部分start*/
+        .site-nav {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin-top: -30px ;
+            margin-left: 70px;
+            background-color: #F1F1F1;
+        }
+
+
+        .site-nav-send,
+        .site-nav-r .fore ,
+        .search-car{
+              position: relative;
+              padding:  0 25px 0 10px;
+          }
+
+        .site-nav-send:hover {
+            background: #fff;
+        }
+
+        .site-nav-city {
+            width: 60px;
+            height: 50px;
+            background: #fff;
+            display: none;
+
+        }
+        .site-nav-send:hover  .site-nav-city{
+            display: block;
+        }
+        .site-nav-send i,
+        .site-nav-r .fore i,
+        .search-car i
+        {
+            position: absolute;
+            top: 13px;
+            right: 8px;
+            width: 15px;
+            height: 7px;
+            font: 400  16px/15px  "consolas"; /*粗细，字体大小，行高，字体格式（）*/
+            overflow: hidden;  /*通过移动外盒子的top值，使得内盒子溢出外部大盒子，多余的部分就会隐藏*/
+        }
+        .site-nav-send s,
+        .fore s,
+        .search-car s
+        { /*内盒子*/     /*行内元素只能设置左右margin，不能设置上下margin*/
+            position: absolute;   /*子绝 不一定父相 有可能是 absolute......但父一定不是static*/
+            top: -6px;
+        }
+        .site-nav-r li {
+            padding: 0 10px;
+            float: left;
+        }
+        .site-nav-r  .line {
+            width: 1px;
+            height: 12px;
+            background-color: #DDD;
+            margin-top: 9px;
+            padding: 0;      /*padding没有负值*/
+        }
+        .site-nav-r .jd-tel {
+            padding-left:  25px;
+        }
+        .jd-tel span {
+            position: absolute;
+            width: 15px;
+            height: 20px;
+            top: 5px;
+            left: 6px;
+            background: url("../images/tel.png") no-repeat;
+        }
+
+        /*site-nav部分end*/
+
+
+        /*top-banner部分start*/
+        .top-banner {
+            margin-top: 30px;
+            background-color: #FC8B00;
+        }
+
+        .close-banner{
+            position: absolute;
+            margin-top: -80px;
+            margin-left: 1191px;
+            width: 19px;
+            height: 19px;
+            background: url(../images/close-banner.png) no-repeat;
+
+        }
+      
+        .close-banner:hover {
+            background-position:  bottom;
+        }
+        /*  top-banner部分end*/
+
+        /*search部分start*/
+        .search-logo{
+            float: left;
+            width: 362px;
+            height: 60px;
+            padding: 20px 0;
+
+        }
+        .search-input{
+            float: left;
+            height: 36px;
+            padding-top: 25px;
+          /*  background-color: blue;  !*颜色的话直接写red不用加#*!*/
+        }
+        .search-input input{
+            float: left;
+            width: 450px;
+            height: 32px;
+            padding-left: 4px;
+            color : rgb(153,153,153);
+            font: 400 14px/32px "Microsoft YaHei";
+            border: 2px solid  #B61D1D;
+            border-right: 0;
+        }
+        .search-input button{
+            width: 82px;
+            height: 36px;
+            background-color: #B61D1D;
+            color: #fff;
+            font: 400 16px/36px "Microsoft YaHei";  /*字体大小 行高*/
+            cursor: pointer;  /*变成小手*/
+           /*!* cursor: text;*!变成光标*/
+            /*cursor: move;变成四角箭头*/
+            /*cursor:default; 变成白色箭头*/
+}
+        .search-car{
+            position: relative;
+            float: right;
+            width: 96px;
+            height: 26px;
+            margin: 25px 65px 0 0 ;
+            border: 1px  solid #DFDFDF;
+            background-color: #F9F9F9;
+            padding: 8px  0  0 43px;
+        }
+        .icon3 {
+            position: absolute;
+            top: -5px;
+            width: 16px;
+            height: 14px;
+            background-color: #C81623;
+            line-height:  14px;
+            text-align: center;
+            color: #fff;
+            border-radius:  7px  7px  7px 0;
+
+        }
+        .search-car span{
+            position: absolute;
+            width: 16px;
+            height: 13px;
+            top: 10px;
+            left: 19px;
+            background: url("../images/tel.png")  0 -60px;
+        }
+
+        .search-moreAlink{
+            float: left;
+            height: 28px;
+            width: 530px;
+            line-height: 28px;
+
+        }
+        .search-moreAlink  a{
+            margin-right: 8px;
+        }
+        .search-logo a {
+
+            width: 270px;
+            height: 60px;
+            display: block;
+            text-indent: -999em ;
+            background :url("../images/logo.png") no-repeat;
+        }
+        /*search部分end*/
+
+
+
+        /*shortcut-nav部分start*/
+        .shortcut-nav {
+            height: 44px;
+            width: 100%;
+            border-bottom: 2px solid #B1191A;
+        }
+
+        .shortcut-nav-menu {
+            width: 210px;
+            height: 44px;   /*有高度  盒子还是原来那么大，但会被撑破  无高度会被 撑大*/
+            float: left;                       /*浮动的盒子会相互影响，不论是否在同一盒子中*/
+            position: relative;  /*调整层级*/
+            z-index:1 ;
+        }
+        .shortcut-nav-menu-all a {
+            display: block;
+            width: 190px;
+            height: 44px;
+            padding: 0 10px;
+            background: #B1191A;
+            color: #fff;
+            font:  400 15px/44px  "Microsoft YaHei";
+        }
+        .shortcut-nav-menu-one {
+            height: 465px;
+            margin-top: 2px;
+            background: #C81623;
+            border-left: 1px solid #B1191A;
+            border-bottom: 1px solid #B1191A;
+        }
+        .shortcut-nav-menu-one div {
+            height: 31px;
+            padding: 0 10px;
+            color:  #fff;                        /*  重点*/
+            font:  400 14px/31px "Microsoft YaHei";
+        }
+        .shortcut-nav-menu-one div:hover {
+            background-color: #fff;
+            
+        }
+            .shortcut-nav-menu-one div:hover  a {        /*重点*/
+                color: #C81623;
+            }
+        .shortcut-nav-menu-one h3 {
+            float: left;
+        }
+        .shortcut-nav-menu-one i {
+            float: right;
+            color: #fff;
+            font:  400 9px/31px "consolas";    /*谷歌不支持小于9PX的字体*/
+        }
+
+        .shortcut-nav-menu-one a {
+            color: #fff;
+        }
+        .shortcut-nav-menu-one-other {
+            width: 100px;
+            height: 200px;
+            background-color: green;
+            margin-left: 199px;
+            padding: 100px 100px;
+            display: none;
+        }
+        .shortcut-nav-menu-one div:hover .shortcut-nav-menu-one-other{
+            display: block;
+        }
+        .shortcut-nav-items {
+            width: 730px;
+            height: 44px;
+            float: left;
+        }
+        .shortcut-nav-items li {
+            float: left;
+        }
+        .shortcut-nav-items a {
+            display: inline-block;
+            height: 44px;
+            color: #333;
+            font: 400  16px/44px  "Microsoft YaHei";
+            padding:  0 20px ;   /*不能直接给宽，每个字体的数目不一致，会导致宽窄不一致*/
+        }
+        .shortcut-nav-items a:hover {       /*hover和：之间不可以有空格*/
+            color:#C81623;
+        }
+        .shortcut-nav-img {
+            width: 200px;
+            height: 44px;
+            float: right;
+            margin-right: 50px;
+            margin-top: -31px;
+            background: #FC8B00;
+        }
+        /*shortcut-nav部分end*/
+
+        /*footer部分start*/
+        /*footer-top部分*/
+        .footer-top-slogan{  /*会产生浮动，清除浮动的方法，谁出问题就给谁加一个clearfix的类名*/
+            width: 100%;
+            height: 54px;
+            padding: 20px;
+            margin-bottom: 16px; ;
+            position: relative;
+            background-color: #F5F5F5  ;
+        }
+        .footer-top-slogan-icon{
+            position: absolute;
+            /*top: 20px;*/
+            left:50%;
+        }
+        .footer-top-slogan-icon1 {
+            margin-left: -604px;
+        }
+        .footer-top-slogan-icon2 {
+            margin-left: -302px;
+        }
+        .footer-top-slogan-icon4 {
+            margin-left:  302px;
+        }
+        .footer-top-shopping  dl{
+            float: left;
+            width: 200px;
+        }
+        .footer-top-shopping  .last-dl{
+            width: 100px;
+        }
+        .footer-top-shopping  dt ,
+        .converage  h3 {
+            height: 34px;
+            font: 400 16px/34px  "Microsoft YaHei";
+        }
+        .footer-top-shopping  dd{
+            line-height: 20px;
+        }
+        .converage {
+            width: 186px;
+            height: 169px;
+            float: right;
+            margin-right: 40px;
+            padding-left: 17px;
+            background: url("../images/china.png ") no-repeat left  16px  ;  /*left bottom*/
+        }
+        .converage p{
+            padding-top: 8px;
+        }
+        .converage a{
+            display: block;
+            margin-top: 55px;
+            padding-left: 110px ;
+        }
+        .footer-bottom {
+            border-top: 1px solid #E5E5E5;
+            margin-top: 20px;
+            text-align: center;   /*会有继承关系*/
+            padding: 20px 0  30px ;  /*分别是上 左右  下*/
+
+        }
+        .footer-bottom-links a {
+            margin: 0 10px ;
+        }
+        .footer-bottom-copyright {
+            padding: 10px 0;
+        }
+        .footer-bottom-img  a {
+            margin: 0 5px;
+        }
+
+/*footer部分end*/
