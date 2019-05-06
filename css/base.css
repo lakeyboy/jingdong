@@ -340,12 +340,16 @@ s, i, em {
             border-left: 1px solid #B1191A;
             border-bottom: 1px solid #B1191A;
         }
-        .shortcut-nav-menu-one div {
+            .shortcut-nav-menu-one-bb {
+                position: relative;
+            }
+        /*.shortcut-nav-menu-one */ .shortcut-nav-menu-one-bb {
             height: 31px;
             padding: 0 10px;
             color:  #fff;                        /*  重点*/
             font:  400 14px/31px "Microsoft YaHei";
         }
+
         .shortcut-nav-menu-one div:hover {
             background-color: #fff;
             
@@ -365,17 +369,20 @@ s, i, em {
         .shortcut-nav-menu-one a {
             color: #fff;
         }
-        .shortcut-nav-menu-one-other {
-            width: 100px;
-            height: 200px;
-            background-color: green;
-            margin-left: 199px;
-            padding: 100px 100px;
+
+        /*弹出去的小盒子*/
+        .mid_container {
+            width:400px;
+            height:300px;
+            color: #fff;
+            background: #C81623;
+            position:relative;
+            left:199px;
             display: none;
+            bottom:1px;
+            border: 1px solid #E9ECE8;
         }
-        .shortcut-nav-menu-one div:hover .shortcut-nav-menu-one-other{
-            display: block;
-        }
+
         .shortcut-nav-items {
             width: 730px;
             height: 44px;
