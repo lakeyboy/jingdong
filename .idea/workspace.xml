@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51f5ff96-31c6-4337-b0d2-5941d4051968" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="51f5ff96-31c6-4337-b0d2-5941d4051968" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,25 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="379" column="23" lean-forward="true" selection-start-line="379" selection-start-column="23" selection-end-line="379" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="421" column="11" selection-start-line="421" selection-start-column="11" selection-end-line="434" selection-end-column="7" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="296" column="9" lean-forward="true" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -46,6 +25,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zhongzhihao" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -81,11 +65,6 @@
           <expand>
             <path>
               <item name="京东" type="b2602c69:ProjectViewProjectNode" />
-              <item name="京东" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="京东" type="b2602c69:ProjectViewProjectNode" />
-              <item name="京东" type="47feb1d3:ProjectViewModuleNode" />
               <item name="京东" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -127,17 +106,33 @@
       <updated>1557111916315</updated>
       <workItem from="1557111917567" duration="802000" />
       <workItem from="1557113553617" duration="4797000" />
-      <workItem from="1557121586776" duration="11127000" />
+      <workItem from="1557121586776" duration="11575000" />
     </task>
+    <task id="LOCAL-00001" summary="鼠标经过时，弹出右边内容">
+      <created>1557137572051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557137572051</updated>
+    </task>
+    <task id="LOCAL-00002" summary="鼠标经过时，弹出右边内容">
+      <created>1557137856823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557137856823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16726000" />
+    <option name="totallyTimeSpent" value="17174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1235119" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1235119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -150,7 +145,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -178,6 +173,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="鼠标经过时，弹出右边内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="鼠标经过时，弹出右边内容" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images" />
@@ -191,7 +190,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="114">
           <caret line="421" column="11" selection-start-line="421" selection-start-column="11" selection-end-line="434" selection-end-column="7" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -206,8 +205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="379" column="23" lean-forward="true" selection-start-line="379" selection-start-column="23" selection-end-line="379" selection-end-column="23" />
+        <state relative-caret-position="216">
+          <caret line="296" column="9" lean-forward="true" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="9" />
         </state>
       </provider>
     </entry>
